@@ -189,7 +189,7 @@ func urlMap(in [][]interface{}) URLMap {
 			continue
 		}
 
-		k = strings.ToLower(k)
+		// k = strings.ToLower(k)
 		u, err := url.Parse(v)
 		if err != nil {
 			log.Printf("warn: %s=%s url invalid", k, v)
